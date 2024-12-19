@@ -1,0 +1,2 @@
+/usr/bin/ar qc libIPC.a Socket/CMakeFiles/Socket_lib.dir/src/ServerSocket.cpp.o Socket/CMakeFiles/Socket_lib.dir/src/SocketAddress.cpp.o Socket/CMakeFiles/Socket_lib.dir/src/SocketTCP.cpp.o
+/usr/bin/ranlib libIPC.a

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20231225-2128-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.22.1"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="PORTATIL-ELENA"
+	OSRelease="5.15.133.1-microsoft-standard-WSL2"
+	OSVersion="#1 SMP Thu Oct 5 21:02:42 UTC 2023"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="154"
+	ProcessorCacheSize="12288"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="1024"
+	TotalPhysicalMemory="3782"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2112.01"
+	>
+	<Testing>
+		<StartDateTime>Dec 25 23:57 WET</StartDateTime>
+		<StartTestTime>1703548621</StartTestTime>
+		<TestList>
+			<Test>./src/Socket/tests/Socket_tests</Test>
+		</TestList>
+		<Test Status="failed">
+			<Name>Socket_tests</Name>
+			<Path>./src/Socket/tests</Path>
+			<FullName>./src/Socket/tests/Socket_tests</FullName>
+			<FullCommandLine>/home/hfernandezs/Dev/IPC/build/src/Socket/tests/Socket_tests</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0319334</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/hfernandezs/Dev/IPC/build/src/Socket/tests/Socket_tests</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJztWFtv2jAUfvevOI8gLQkJsBZLe2BAq2pTWxW6PaAqSpNTiBrsLHboul8/5zKacAlZW7o91Nxi5zv+zi2HI1/FjPlsBgvHZ40m3EV8AcacL9CY32HEHObhL2EMcWmcXQ6M29gPPMP2MBTGjPNZgBKF1ETkFqZGOk2u7GRX3XXJ9NNq3MBVTtmFBCMyTiudgIh99auTqbYaN3Aa8FsnyADIln7E2QKZAqPU4nAN3CnuOubuPcq+50UoBJnC1fU5pOOmfEsfcCZkFLuSR4RYXc20NKtltcFq0+4RbZnghy6lJRm7IGNPFCelyfdn7j1SmGY0cPGligoaLViIZpViY5QSI9Fn3ml2RSq23gDXIPjmBL7ny8fBHN17Udd4SueOsJeJrB3ySFLIb4Bm6n/eVDNBwcABxiWkYMjAmlmbx89pdjL44mn7V9W+0+p9zPUv6p4sP4PHD/eybHppBXs3rDoPUrJXzQTTOtILnwM6bS9TAl4DvZu3Kyu20qnMOExWvEaFq+e2FdPb5cRhyvcWloM9uL03C1El0xrwvzSxOlC9zUBV9CHlngIaZmdfF6KaoqXqV3zOLkKMHNUbVTY6W+CrVqdeM6iU6io8SC6doEnKYmbWaxakJoPLbeqr5b9qHRW+sm2sIV+8hHN8AJFOwY3QkajC19ndvieNeSZtpH4xnrRK5robhlQFGk4cP4gjJKOfIbpqU8AfsQqpfAR+B3KOApMUiFFQAim/PkNpC6/RJIl3vs99d65yRemi5ioHyQtVOn6uSk4W7A29Wnr6oi21XkqLDWS52SR1Ikxp6g3pyFhtkC2rTMyfHR4iQ++FDuk9O0apVlvjNJ70J9dj+/p8ODo5Ox8N111W0/Y92dlLxsusb7ff06HskM4/SQdVn0/6Z19Hw531UBXZ9mZR3lpdc+j2erzrAECiE2kef2DlA4bdBwsQOUyHhnVcoFJmXPbH48yM/A9DLxuXafwBAl8krr3FgD/QGvYTokRzzGQ0npDf56VIMQ==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Dec 25 23:57 WET</EndDateTime>
+		<EndTestTime>1703548621</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

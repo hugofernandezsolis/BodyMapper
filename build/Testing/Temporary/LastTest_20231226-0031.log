@@ -1,0 +1,83 @@
+Start testing: Dec 26 00:40 WET
+----------------------------------------------------------
+1/1 Testing: Socket_tests
+1/1 Test: Socket_tests
+Command: "/home/hfernandezs/Dev/IPC/build/src/Socket/tests/Socket_tests"
+Directory: /home/hfernandezs/Dev/IPC/build/src/Socket/tests
+"Socket_tests" start time: Dec 26 00:40 WET
+Output:
+----------------------------------------------------------
+Running main() from /home/hfernandezs/Dev/IPC/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 5 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 4 tests from SocketAddress
+[ RUN      ] SocketAddress.Constructor
+
+26-12-2023 00:40:40 ipc::SocketAddress_Constructor_Test::TestBody: [       OK ] SocketAddress.Constructor (0 ms)
+[ RUN      ] SocketAddress.SettersAndGetters
+[       OK ] SocketAddress.SettersAndGetters (0 ms)
+[ RUN      ] SocketAddress.ValidityChecks
+
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_port: Address 0.0.0.0:0 has a valid port: 0
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_ip: Address 0.0.0.0:0 has a valid ip: 0.0.0.0
+26-12-2023 00:40:40 ipc::SocketAddress::is_valid: Address 0.0.0.0:0 is valid
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_port: Address 0.0.0.0:4096 has a valid port: 4096
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_ip: Address 0.0.0.0:4096 has a valid ip: 0.0.0.0
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_port: Address 0.0.0.0:4096 has a valid port: 4096
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_ip: Address 0.0.0.0:4096 has a valid ip: 0.0.0.0
+26-12-2023 00:40:40 ipc::SocketAddress::is_valid: Address 0.0.0.0:4096 is valid
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_port: Address 127.127.127.127:4096 has a valid port: 4096
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_ip: Address 127.127.127.127:4096 has a valid ip: 127.127.127.127
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_port: Address 127.127.127.127:4096 has a valid port: 4096
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_ip: Address 127.127.127.127:4096 has a valid ip: 127.127.127.127
+26-12-2023 00:40:40 ipc::SocketAddress::is_valid: Address 127.127.127.127:4096 is valid
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_port: Address 127.127.127.127:-1 has a not valid port: -1
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_ip: Address 127.127.127.127:-1 has a valid ip: 127.127.127.127
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_port: Address 127.127.127.127:-1 has a not valid port: -1
+26-12-2023 00:40:40 ipc::SocketAddress::is_valid: Address 127.127.127.127:-1 is not valid
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_port: Address 127.127.127.927:-1 has a not valid port: -1
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_ip: Address 127.127.127.927:-1 has a not valid port: 127.127.127.927
+26-12-2023 00:40:40 ipc::SocketAddress::has_valid_port: Address 127.127.127.927:-1 has a not valid port: -1
+26-12-2023 00:40:40 ipc::SocketAddress::is_valid: Address 127.127.127.927:-1 is not valid[       OK ] SocketAddress.ValidityChecks (7 ms)
+[ RUN      ] SocketAddress.ConversionOperators
+[       OK ] SocketAddress.ConversionOperators (0 ms)
+[----------] 4 tests from SocketAddress (7 ms total)
+
+[----------] 1 test from SocketTCP
+[ RUN      ] SocketTCP.Constructor
+
+26-12-2023 00:40:40 ipc::SocketTCP_Constructor_Test::TestBody: 
+26-12-2023 00:40:40 ipc::SocketTCP::SocketTCP: New socket created: 4/home/hfernandezs/Dev/IPC/src/Socket/tests/SocketTCP_test.cpp:27: Failure
+Expected equality of these values:
+  sock.get_sd()
+    Which is: 4
+  -1
+
+
+26-12-2023 00:40:40 ipc::SocketTCP::get_status: Socket 4 is not opened
+26-12-2023 00:40:40 ipc::SocketTCP::SocketTCP: New socket created: 5/home/hfernandezs/Dev/IPC/src/Socket/tests/SocketTCP_test.cpp:32: Failure
+Expected equality of these values:
+  sock2.get_sd()
+    Which is: 5
+  -1
+
+
+26-12-2023 00:40:40 ipc::SocketTCP::get_status: Socket 5 is not opened[  FAILED  ] SocketTCP.Constructor (0 ms)
+[----------] 1 test from SocketTCP (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 2 test suites ran. (7 ms total)
+[  PASSED  ] 4 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SocketTCP.Constructor
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"Socket_tests" end time: Dec 26 00:40 WET
+"Socket_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 26 00:40 WET
