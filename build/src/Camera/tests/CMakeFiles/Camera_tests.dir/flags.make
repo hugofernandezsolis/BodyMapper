@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hfernandezs/Dev/BodyMapper/src/Camera/tests/../include -I/home/hfernandezs/Dev/BodyMapper/src/Camera/include -I/home/hfernandezs/Dev/BodyMapper/src/common -isystem /home/hfernandezs/Dev/BodyMapper/build/_deps/googletest-src/googletest/include -isystem /home/hfernandezs/Dev/BodyMapper/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/home/hfernandezs/Dev/BodyMapper/src/Camera/tests/../include -I/home/hfernandezs/Dev/BodyMapper/src/Camera/include -I/home/hfernandezs/Dev/BodyMapper/src/common
 
-CXX_FLAGS = -Wall -Werror -Wextra -Wpedantic -pedantic -std=c++17
+CXX_FLAGS = -Wall -Werror -Wextra -Wpedantic -pedantic -DGTEST_HAS_PTHREAD=1 -std=c++17
 

@@ -78,8 +78,8 @@ Camera_tests_EXTERNAL_OBJECTS = \
 
 bin/Camera_tests: src/Camera/CMakeFiles/Camera_lib.dir/src/Camera.cpp.o
 bin/Camera_tests: src/Camera/tests/CMakeFiles/Camera_tests.dir/build.make
-bin/Camera_tests: lib/libgtest_main.a
-bin/Camera_tests: lib/libgtest.a
+bin/Camera_tests: /usr/lib/x86_64-linux-gnu/libgtest_main.a
+bin/Camera_tests: /usr/lib/x86_64-linux-gnu/libgtest.a
 bin/Camera_tests: src/Camera/tests/CMakeFiles/Camera_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hfernandezs/Dev/BodyMapper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX executable ../../../bin/Camera_tests"
 	cd /home/hfernandezs/Dev/BodyMapper/build/src/Camera/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Camera_tests.dir/link.txt --verbose=$(VERBOSE)

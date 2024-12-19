@@ -75,75 +75,21 @@ clean: src/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory _deps/googletest-build
-
-# Recursive "all" directory target.
-_deps/googletest-build/all: _deps/googletest-build/googlemock/all
-.PHONY : _deps/googletest-build/all
-
-# Recursive "preinstall" directory target.
-_deps/googletest-build/preinstall: _deps/googletest-build/googlemock/preinstall
-.PHONY : _deps/googletest-build/preinstall
-
-# Recursive "clean" directory target.
-_deps/googletest-build/clean: _deps/googletest-build/googlemock/clean
-.PHONY : _deps/googletest-build/clean
-
-#=============================================================================
-# Directory level rules for directory _deps/googletest-build/googlemock
-
-# Recursive "all" directory target.
-_deps/googletest-build/googlemock/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-_deps/googletest-build/googlemock/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-_deps/googletest-build/googlemock/all: _deps/googletest-build/googletest/all
-.PHONY : _deps/googletest-build/googlemock/all
-
-# Recursive "preinstall" directory target.
-_deps/googletest-build/googlemock/preinstall: _deps/googletest-build/googletest/preinstall
-.PHONY : _deps/googletest-build/googlemock/preinstall
-
-# Recursive "clean" directory target.
-_deps/googletest-build/googlemock/clean: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean
-_deps/googletest-build/googlemock/clean: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
-_deps/googletest-build/googlemock/clean: _deps/googletest-build/googletest/clean
-.PHONY : _deps/googletest-build/googlemock/clean
-
-#=============================================================================
-# Directory level rules for directory _deps/googletest-build/googletest
-
-# Recursive "all" directory target.
-_deps/googletest-build/googletest/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-_deps/googletest-build/googletest/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-.PHONY : _deps/googletest-build/googletest/all
-
-# Recursive "preinstall" directory target.
-_deps/googletest-build/googletest/preinstall:
-.PHONY : _deps/googletest-build/googletest/preinstall
-
-# Recursive "clean" directory target.
-_deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean
-_deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
-.PHONY : _deps/googletest-build/googletest/clean
-
-#=============================================================================
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
 src/all: src/CMakeFiles/BodyMapper.dir/all
-src/all: _deps/googletest-build/all
 src/all: src/common/all
 src/all: src/Camera/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
-src/preinstall: _deps/googletest-build/preinstall
 src/preinstall: src/common/preinstall
 src/preinstall: src/Camera/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/BodyMapper.dir/clean
-src/clean: _deps/googletest-build/clean
 src/clean: src/common/clean
 src/clean: src/Camera/clean
 .PHONY : src/clean
@@ -223,111 +169,6 @@ src/CMakeFiles/BodyMapper.dir/clean:
 .PHONY : src/CMakeFiles/BodyMapper.dir/clean
 
 #=============================================================================
-# Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
-
-# All Build rule for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/BodyMapper/build/CMakeFiles --progress-num=5,6 "Built target gmock"
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-
-# Build rule for subdir invocation for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
-
-# Convenience name for target.
-gmock: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
-.PHONY : gmock
-
-# clean rule for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean
-
-#=============================================================================
-# Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
-
-# All Build rule for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/BodyMapper/build/CMakeFiles --progress-num=7,8 "Built target gmock_main"
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-
-# Build rule for subdir invocation for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
-
-# Convenience name for target.
-gmock_main: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
-.PHONY : gmock_main
-
-# clean rule for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
-
-#=============================================================================
-# Target rules for target _deps/googletest-build/googletest/CMakeFiles/gtest.dir
-
-# All Build rule for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/BodyMapper/build/CMakeFiles --progress-num=9,10 "Built target gtest"
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-
-# Build rule for subdir invocation for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
-
-# Convenience name for target.
-gtest: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
-.PHONY : gtest
-
-# clean rule for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean
-
-#=============================================================================
-# Target rules for target _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
-
-# All Build rule for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/BodyMapper/build/CMakeFiles --progress-num=11,12 "Built target gtest_main"
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-
-# Build rule for subdir invocation for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
-
-# Convenience name for target.
-gtest_main: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
-.PHONY : gtest_main
-
-# clean rule for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
-
-#=============================================================================
 # Target rules for target src/common/CMakeFiles/common_lib.dir
 
 # All Build rule for target.
@@ -383,8 +224,6 @@ src/Camera/CMakeFiles/Camera_lib.dir/clean:
 # Target rules for target src/Camera/tests/CMakeFiles/Camera_tests.dir
 
 # All Build rule for target.
-src/Camera/tests/CMakeFiles/Camera_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-src/Camera/tests/CMakeFiles/Camera_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 src/Camera/tests/CMakeFiles/Camera_tests.dir/all: src/common/CMakeFiles/common_lib.dir/all
 src/Camera/tests/CMakeFiles/Camera_tests.dir/all: src/Camera/CMakeFiles/Camera_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f src/Camera/tests/CMakeFiles/Camera_tests.dir/build.make src/Camera/tests/CMakeFiles/Camera_tests.dir/depend
@@ -394,7 +233,7 @@ src/Camera/tests/CMakeFiles/Camera_tests.dir/all: src/Camera/CMakeFiles/Camera_l
 
 # Build rule for subdir invocation for target.
 src/Camera/tests/CMakeFiles/Camera_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Camera/tests/CMakeFiles/Camera_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
 .PHONY : src/Camera/tests/CMakeFiles/Camera_tests.dir/rule
