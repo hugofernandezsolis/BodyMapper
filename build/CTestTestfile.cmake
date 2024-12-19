@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/hfernandezs/Dev/IPC
-# Build directory: /home/hfernandezs/Dev/IPC/build
+# Source directory: /home/hfernandezs/Dev/BodyMapper
+# Build directory: /home/hfernandezs/Dev/BodyMapper/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

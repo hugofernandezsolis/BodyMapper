@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hfernandezs/Dev/IPC
+CMAKE_SOURCE_DIR = /home/hfernandezs/Dev/BodyMapper
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hfernandezs/Dev/IPC/build
+CMAKE_BINARY_DIR = /home/hfernandezs/Dev/BodyMapper/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -129,56 +129,56 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/IPC.dir/all
+src/all: src/CMakeFiles/BodyMapper.dir/all
 src/all: _deps/googletest-build/all
 src/all: src/common/all
-src/all: src/Socket/all
+src/all: src/Camera/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
 src/preinstall: _deps/googletest-build/preinstall
 src/preinstall: src/common/preinstall
-src/preinstall: src/Socket/preinstall
+src/preinstall: src/Camera/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/IPC.dir/clean
+src/clean: src/CMakeFiles/BodyMapper.dir/clean
 src/clean: _deps/googletest-build/clean
 src/clean: src/common/clean
-src/clean: src/Socket/clean
+src/clean: src/Camera/clean
 .PHONY : src/clean
 
 #=============================================================================
-# Directory level rules for directory src/Socket
+# Directory level rules for directory src/Camera
 
 # Recursive "all" directory target.
-src/Socket/all: src/Socket/CMakeFiles/Socket_lib.dir/all
-src/Socket/all: src/Socket/tests/all
-.PHONY : src/Socket/all
+src/Camera/all: src/Camera/CMakeFiles/Camera_lib.dir/all
+src/Camera/all: src/Camera/tests/all
+.PHONY : src/Camera/all
 
 # Recursive "preinstall" directory target.
-src/Socket/preinstall: src/Socket/tests/preinstall
-.PHONY : src/Socket/preinstall
+src/Camera/preinstall: src/Camera/tests/preinstall
+.PHONY : src/Camera/preinstall
 
 # Recursive "clean" directory target.
-src/Socket/clean: src/Socket/CMakeFiles/Socket_lib.dir/clean
-src/Socket/clean: src/Socket/tests/clean
-.PHONY : src/Socket/clean
+src/Camera/clean: src/Camera/CMakeFiles/Camera_lib.dir/clean
+src/Camera/clean: src/Camera/tests/clean
+.PHONY : src/Camera/clean
 
 #=============================================================================
-# Directory level rules for directory src/Socket/tests
+# Directory level rules for directory src/Camera/tests
 
 # Recursive "all" directory target.
-src/Socket/tests/all: src/Socket/tests/CMakeFiles/Socket_tests.dir/all
-.PHONY : src/Socket/tests/all
+src/Camera/tests/all: src/Camera/tests/CMakeFiles/Camera_tests.dir/all
+.PHONY : src/Camera/tests/all
 
 # Recursive "preinstall" directory target.
-src/Socket/tests/preinstall:
-.PHONY : src/Socket/tests/preinstall
+src/Camera/tests/preinstall:
+.PHONY : src/Camera/tests/preinstall
 
 # Recursive "clean" directory target.
-src/Socket/tests/clean: src/Socket/tests/CMakeFiles/Socket_tests.dir/clean
-.PHONY : src/Socket/tests/clean
+src/Camera/tests/clean: src/Camera/tests/CMakeFiles/Camera_tests.dir/clean
+.PHONY : src/Camera/tests/clean
 
 #=============================================================================
 # Directory level rules for directory src/common
@@ -196,31 +196,31 @@ src/common/clean: src/common/CMakeFiles/common_lib.dir/clean
 .PHONY : src/common/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/IPC.dir
+# Target rules for target src/CMakeFiles/BodyMapper.dir
 
 # All Build rule for target.
-src/CMakeFiles/IPC.dir/all: src/common/CMakeFiles/common_lib.dir/all
-src/CMakeFiles/IPC.dir/all: src/Socket/CMakeFiles/Socket_lib.dir/all
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/IPC.dir/build.make src/CMakeFiles/IPC.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/IPC.dir/build.make src/CMakeFiles/IPC.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/IPC/build/CMakeFiles --progress-num=1 "Built target IPC"
-.PHONY : src/CMakeFiles/IPC.dir/all
+src/CMakeFiles/BodyMapper.dir/all: src/common/CMakeFiles/common_lib.dir/all
+src/CMakeFiles/BodyMapper.dir/all: src/Camera/CMakeFiles/Camera_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/BodyMapper.dir/build.make src/CMakeFiles/BodyMapper.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/BodyMapper.dir/build.make src/CMakeFiles/BodyMapper.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/BodyMapper/build/CMakeFiles --progress-num=1,2 "Built target BodyMapper"
+.PHONY : src/CMakeFiles/BodyMapper.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/IPC.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/IPC.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/IPC.dir/rule
+src/CMakeFiles/BodyMapper.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/BodyMapper.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/BodyMapper.dir/rule
 
 # Convenience name for target.
-IPC: src/CMakeFiles/IPC.dir/rule
-.PHONY : IPC
+BodyMapper: src/CMakeFiles/BodyMapper.dir/rule
+.PHONY : BodyMapper
 
 # clean rule for target.
-src/CMakeFiles/IPC.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/IPC.dir/build.make src/CMakeFiles/IPC.dir/clean
-.PHONY : src/CMakeFiles/IPC.dir/clean
+src/CMakeFiles/BodyMapper.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/BodyMapper.dir/build.make src/CMakeFiles/BodyMapper.dir/clean
+.PHONY : src/CMakeFiles/BodyMapper.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
@@ -229,14 +229,14 @@ src/CMakeFiles/IPC.dir/clean:
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/IPC/build/CMakeFiles --progress-num=8,9 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/BodyMapper/build/CMakeFiles --progress-num=5,6 "Built target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -256,14 +256,14 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletes
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/IPC/build/CMakeFiles --progress-num=10,11 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/BodyMapper/build/CMakeFiles --progress-num=7,8 "Built target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -282,14 +282,14 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/IPC/build/CMakeFiles --progress-num=12,13 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/BodyMapper/build/CMakeFiles --progress-num=9,10 "Built target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -308,14 +308,14 @@ _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/IPC/build/CMakeFiles --progress-num=14,15 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/BodyMapper/build/CMakeFiles --progress-num=11,12 "Built target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -334,14 +334,14 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean:
 src/common/CMakeFiles/common_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/common_lib.dir/build.make src/common/CMakeFiles/common_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/common/CMakeFiles/common_lib.dir/build.make src/common/CMakeFiles/common_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/IPC/build/CMakeFiles --progress-num= "Built target common_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/BodyMapper/build/CMakeFiles --progress-num= "Built target common_lib"
 .PHONY : src/common/CMakeFiles/common_lib.dir/all
 
 # Build rule for subdir invocation for target.
 src/common/CMakeFiles/common_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/common/CMakeFiles/common_lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
 .PHONY : src/common/CMakeFiles/common_lib.dir/rule
 
 # Convenience name for target.
@@ -354,59 +354,59 @@ src/common/CMakeFiles/common_lib.dir/clean:
 .PHONY : src/common/CMakeFiles/common_lib.dir/clean
 
 #=============================================================================
-# Target rules for target src/Socket/CMakeFiles/Socket_lib.dir
+# Target rules for target src/Camera/CMakeFiles/Camera_lib.dir
 
 # All Build rule for target.
-src/Socket/CMakeFiles/Socket_lib.dir/all: src/common/CMakeFiles/common_lib.dir/all
-	$(MAKE) $(MAKESILENT) -f src/Socket/CMakeFiles/Socket_lib.dir/build.make src/Socket/CMakeFiles/Socket_lib.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/Socket/CMakeFiles/Socket_lib.dir/build.make src/Socket/CMakeFiles/Socket_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/IPC/build/CMakeFiles --progress-num=2,3,4 "Built target Socket_lib"
-.PHONY : src/Socket/CMakeFiles/Socket_lib.dir/all
+src/Camera/CMakeFiles/Camera_lib.dir/all: src/common/CMakeFiles/common_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f src/Camera/CMakeFiles/Camera_lib.dir/build.make src/Camera/CMakeFiles/Camera_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Camera/CMakeFiles/Camera_lib.dir/build.make src/Camera/CMakeFiles/Camera_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/BodyMapper/build/CMakeFiles --progress-num=3 "Built target Camera_lib"
+.PHONY : src/Camera/CMakeFiles/Camera_lib.dir/all
 
 # Build rule for subdir invocation for target.
-src/Socket/CMakeFiles/Socket_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Socket/CMakeFiles/Socket_lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 0
-.PHONY : src/Socket/CMakeFiles/Socket_lib.dir/rule
+src/Camera/CMakeFiles/Camera_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Camera/CMakeFiles/Camera_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
+.PHONY : src/Camera/CMakeFiles/Camera_lib.dir/rule
 
 # Convenience name for target.
-Socket_lib: src/Socket/CMakeFiles/Socket_lib.dir/rule
-.PHONY : Socket_lib
+Camera_lib: src/Camera/CMakeFiles/Camera_lib.dir/rule
+.PHONY : Camera_lib
 
 # clean rule for target.
-src/Socket/CMakeFiles/Socket_lib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/Socket/CMakeFiles/Socket_lib.dir/build.make src/Socket/CMakeFiles/Socket_lib.dir/clean
-.PHONY : src/Socket/CMakeFiles/Socket_lib.dir/clean
+src/Camera/CMakeFiles/Camera_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Camera/CMakeFiles/Camera_lib.dir/build.make src/Camera/CMakeFiles/Camera_lib.dir/clean
+.PHONY : src/Camera/CMakeFiles/Camera_lib.dir/clean
 
 #=============================================================================
-# Target rules for target src/Socket/tests/CMakeFiles/Socket_tests.dir
+# Target rules for target src/Camera/tests/CMakeFiles/Camera_tests.dir
 
 # All Build rule for target.
-src/Socket/tests/CMakeFiles/Socket_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-src/Socket/tests/CMakeFiles/Socket_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-src/Socket/tests/CMakeFiles/Socket_tests.dir/all: src/common/CMakeFiles/common_lib.dir/all
-src/Socket/tests/CMakeFiles/Socket_tests.dir/all: src/Socket/CMakeFiles/Socket_lib.dir/all
-	$(MAKE) $(MAKESILENT) -f src/Socket/tests/CMakeFiles/Socket_tests.dir/build.make src/Socket/tests/CMakeFiles/Socket_tests.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/Socket/tests/CMakeFiles/Socket_tests.dir/build.make src/Socket/tests/CMakeFiles/Socket_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/IPC/build/CMakeFiles --progress-num=5,6,7 "Built target Socket_tests"
-.PHONY : src/Socket/tests/CMakeFiles/Socket_tests.dir/all
+src/Camera/tests/CMakeFiles/Camera_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+src/Camera/tests/CMakeFiles/Camera_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+src/Camera/tests/CMakeFiles/Camera_tests.dir/all: src/common/CMakeFiles/common_lib.dir/all
+src/Camera/tests/CMakeFiles/Camera_tests.dir/all: src/Camera/CMakeFiles/Camera_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f src/Camera/tests/CMakeFiles/Camera_tests.dir/build.make src/Camera/tests/CMakeFiles/Camera_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Camera/tests/CMakeFiles/Camera_tests.dir/build.make src/Camera/tests/CMakeFiles/Camera_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hfernandezs/Dev/BodyMapper/build/CMakeFiles --progress-num=4 "Built target Camera_tests"
+.PHONY : src/Camera/tests/CMakeFiles/Camera_tests.dir/all
 
 # Build rule for subdir invocation for target.
-src/Socket/tests/CMakeFiles/Socket_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Socket/tests/CMakeFiles/Socket_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 0
-.PHONY : src/Socket/tests/CMakeFiles/Socket_tests.dir/rule
+src/Camera/tests/CMakeFiles/Camera_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Camera/tests/CMakeFiles/Camera_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
+.PHONY : src/Camera/tests/CMakeFiles/Camera_tests.dir/rule
 
 # Convenience name for target.
-Socket_tests: src/Socket/tests/CMakeFiles/Socket_tests.dir/rule
-.PHONY : Socket_tests
+Camera_tests: src/Camera/tests/CMakeFiles/Camera_tests.dir/rule
+.PHONY : Camera_tests
 
 # clean rule for target.
-src/Socket/tests/CMakeFiles/Socket_tests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/Socket/tests/CMakeFiles/Socket_tests.dir/build.make src/Socket/tests/CMakeFiles/Socket_tests.dir/clean
-.PHONY : src/Socket/tests/CMakeFiles/Socket_tests.dir/clean
+src/Camera/tests/CMakeFiles/Camera_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Camera/tests/CMakeFiles/Camera_tests.dir/build.make src/Camera/tests/CMakeFiles/Camera_tests.dir/clean
+.PHONY : src/Camera/tests/CMakeFiles/Camera_tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
@@ -415,7 +415,7 @@ src/Socket/tests/CMakeFiles/Socket_tests.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/hfernandezs/Dev/IPC/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

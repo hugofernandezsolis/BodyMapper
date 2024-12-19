@@ -7,6 +7,8 @@
 
 include(FetchContent)
 
+message(STATUS "Fetching GTest...")
+
 # Download and configure Google Test as part of the build
 FetchContent_Declare(
     googletest
@@ -20,6 +22,20 @@ find_package(
   GTest
     REQUIRED
 )
+
+message(STATUS "Fetching OpenCV...")
+
+# Download and configure OpenCV as part of the build
+FetchContent_Declare(
+    opencv
+    GIT_REPOSITORY https://github.com/opencv/opencv.git
+    GIT_TAG 4.x  # Replace with the specific version tag you need, e.g., 4.5.2
+)
+
+FetchContent_MakeAvailable(opencv)
+
+# Find the OpenCV package
+find_package(OpenCV REQUIRED)
 
 
 ###############################################################################
@@ -35,8 +51,9 @@ set (
     Camera          
 )
 
-add_library (
+add_executable (
   ${PROJECT_NAME}
+    ./main.cpp
 )
 
 # Iterate over each subdirectory

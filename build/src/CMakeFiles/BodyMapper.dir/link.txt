@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/BodyMapper.dir/main.cpp.o Camera/CMakeFiles/Camera_lib.dir/src/Camera.cpp.o -o ../bin/BodyMapper 

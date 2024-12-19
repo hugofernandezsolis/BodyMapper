@@ -28,6 +28,11 @@ set (CMAKE_CXX_STANDARD_REQUIRED ON)
 # Add common compile options to promote code quality.
 add_compile_options (-Wall -Werror -Wextra -Wpedantic -pedantic)
 
+# Set cmake output dirs
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set (CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set (CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+
 
 ###############################################################################
 ###                         PROJECT INITIALIZATION                          ###

@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/Socket_tests.dir/SocketAddress_tests.cpp.o CMakeFiles/Socket_tests.dir/SocketTCP_test.cpp.o ../CMakeFiles/Socket_lib.dir/src/ServerSocket.cpp.o ../CMakeFiles/Socket_lib.dir/src/SocketAddress.cpp.o ../CMakeFiles/Socket_lib.dir/src/SocketTCP.cpp.o -o Socket_tests  ../../../lib/libgtest_main.a ../../../lib/libgtest.a 

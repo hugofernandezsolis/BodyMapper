@@ -47,5 +47,4 @@ namespace {
 #define LOG_INFO std::cout << '\n' << currentDateTime() << " " << FUNCTION_NAME << ": "
 #define LOG_ERROR std::cerr << '\n' << currentDateTime() << " " << FUNCTION_NAME << ": "
 
-
 #endif // LOGS_H

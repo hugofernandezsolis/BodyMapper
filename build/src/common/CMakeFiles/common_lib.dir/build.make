@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hfernandezs/Dev/IPC
+CMAKE_SOURCE_DIR = /home/hfernandezs/Dev/BodyMapper
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hfernandezs/Dev/IPC/build
+CMAKE_BINARY_DIR = /home/hfernandezs/Dev/BodyMapper/build
 
 # Include any dependencies generated for this target.
 include src/common/CMakeFiles/common_lib.dir/depend.make
@@ -77,10 +77,10 @@ src/common/CMakeFiles/common_lib.dir/build: common_lib
 .PHONY : src/common/CMakeFiles/common_lib.dir/build
 
 src/common/CMakeFiles/common_lib.dir/clean:
-	cd /home/hfernandezs/Dev/IPC/build/src/common && $(CMAKE_COMMAND) -P CMakeFiles/common_lib.dir/cmake_clean.cmake
+	cd /home/hfernandezs/Dev/BodyMapper/build/src/common && $(CMAKE_COMMAND) -P CMakeFiles/common_lib.dir/cmake_clean.cmake
 .PHONY : src/common/CMakeFiles/common_lib.dir/clean
 
 src/common/CMakeFiles/common_lib.dir/depend:
-	cd /home/hfernandezs/Dev/IPC/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hfernandezs/Dev/IPC /home/hfernandezs/Dev/IPC/src/common /home/hfernandezs/Dev/IPC/build /home/hfernandezs/Dev/IPC/build/src/common /home/hfernandezs/Dev/IPC/build/src/common/CMakeFiles/common_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hfernandezs/Dev/BodyMapper /home/hfernandezs/Dev/BodyMapper/src/common /home/hfernandezs/Dev/BodyMapper/build /home/hfernandezs/Dev/BodyMapper/build/src/common /home/hfernandezs/Dev/BodyMapper/build/src/common/CMakeFiles/common_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/common/CMakeFiles/common_lib.dir/depend
 

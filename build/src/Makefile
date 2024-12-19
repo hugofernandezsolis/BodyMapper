@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hfernandezs/Dev/IPC
+CMAKE_SOURCE_DIR = /home/hfernandezs/Dev/BodyMapper
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hfernandezs/Dev/IPC/build
+CMAKE_BINARY_DIR = /home/hfernandezs/Dev/BodyMapper/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hfernandezs/Dev/IPC/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles /home/hfernandezs/Dev/IPC/build/src//CMakeFiles/progress.marks
-	cd /home/hfernandezs/Dev/IPC/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 0
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles /home/hfernandezs/Dev/BodyMapper/build/src//CMakeFiles/progress.marks
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hfernandezs/Dev/IPC/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,33 +158,57 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hfernandezs/Dev/IPC/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hfernandezs/Dev/IPC/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/hfernandezs/Dev/IPC/build && $(CMAKE_COMMAND) -P /home/hfernandezs/Dev/IPC/build/CMakeFiles/VerifyGlobs.cmake
-	cd /home/hfernandezs/Dev/IPC/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(CMAKE_COMMAND) -P /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/IPC.dir/rule:
-	cd /home/hfernandezs/Dev/IPC/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/IPC.dir/rule
-.PHONY : src/CMakeFiles/IPC.dir/rule
+src/CMakeFiles/BodyMapper.dir/rule:
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/BodyMapper.dir/rule
+.PHONY : src/CMakeFiles/BodyMapper.dir/rule
 
 # Convenience name for target.
-IPC: src/CMakeFiles/IPC.dir/rule
-.PHONY : IPC
+BodyMapper: src/CMakeFiles/BodyMapper.dir/rule
+.PHONY : BodyMapper
 
 # fast build rule for target.
-IPC/fast:
-	cd /home/hfernandezs/Dev/IPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/IPC.dir/build.make src/CMakeFiles/IPC.dir/build
-.PHONY : IPC/fast
+BodyMapper/fast:
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BodyMapper.dir/build.make src/CMakeFiles/BodyMapper.dir/build
+.PHONY : BodyMapper/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BodyMapper.dir/build.make src/CMakeFiles/BodyMapper.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BodyMapper.dir/build.make src/CMakeFiles/BodyMapper.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/BodyMapper.dir/build.make src/CMakeFiles/BodyMapper.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -199,7 +223,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... IPC"
+	@echo "... BodyMapper"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -211,7 +238,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/hfernandezs/Dev/IPC/build && $(CMAKE_COMMAND) -P /home/hfernandezs/Dev/IPC/build/CMakeFiles/VerifyGlobs.cmake
-	cd /home/hfernandezs/Dev/IPC/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(CMAKE_COMMAND) -P /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/hfernandezs/Dev/BodyMapper/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hfernandezs/Dev/IPC
+CMAKE_SOURCE_DIR = /home/hfernandezs/Dev/BodyMapper
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hfernandezs/Dev/IPC/build
+CMAKE_BINARY_DIR = /home/hfernandezs/Dev/BodyMapper/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles /home/hfernandezs/Dev/IPC/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles /home/hfernandezs/Dev/BodyMapper/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/IPC/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -168,22 +168,22 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /home/hfernandezs/Dev/IPC/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named IPC
+# Target rules for targets named BodyMapper
 
 # Build rule for target.
-IPC: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 IPC
-.PHONY : IPC
+BodyMapper: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BodyMapper
+.PHONY : BodyMapper
 
 # fast build rule for target.
-IPC/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/IPC.dir/build.make src/CMakeFiles/IPC.dir/build
-.PHONY : IPC/fast
+BodyMapper/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/BodyMapper.dir/build.make src/CMakeFiles/BodyMapper.dir/build
+.PHONY : BodyMapper/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -251,30 +251,30 @@ common_lib/fast:
 .PHONY : common_lib/fast
 
 #=============================================================================
-# Target rules for targets named Socket_lib
+# Target rules for targets named Camera_lib
 
 # Build rule for target.
-Socket_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Socket_lib
-.PHONY : Socket_lib
+Camera_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Camera_lib
+.PHONY : Camera_lib
 
 # fast build rule for target.
-Socket_lib/fast:
-	$(MAKE) $(MAKESILENT) -f src/Socket/CMakeFiles/Socket_lib.dir/build.make src/Socket/CMakeFiles/Socket_lib.dir/build
-.PHONY : Socket_lib/fast
+Camera_lib/fast:
+	$(MAKE) $(MAKESILENT) -f src/Camera/CMakeFiles/Camera_lib.dir/build.make src/Camera/CMakeFiles/Camera_lib.dir/build
+.PHONY : Camera_lib/fast
 
 #=============================================================================
-# Target rules for targets named Socket_tests
+# Target rules for targets named Camera_tests
 
 # Build rule for target.
-Socket_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Socket_tests
-.PHONY : Socket_tests
+Camera_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Camera_tests
+.PHONY : Camera_tests
 
 # fast build rule for target.
-Socket_tests/fast:
-	$(MAKE) $(MAKESILENT) -f src/Socket/tests/CMakeFiles/Socket_tests.dir/build.make src/Socket/tests/CMakeFiles/Socket_tests.dir/build
-.PHONY : Socket_tests/fast
+Camera_tests/fast:
+	$(MAKE) $(MAKESILENT) -f src/Camera/tests/CMakeFiles/Camera_tests.dir/build.make src/Camera/tests/CMakeFiles/Camera_tests.dir/build
+.PHONY : Camera_tests/fast
 
 # Help Target
 help:
@@ -289,9 +289,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... IPC"
-	@echo "... Socket_lib"
-	@echo "... Socket_tests"
+	@echo "... BodyMapper"
+	@echo "... Camera_lib"
+	@echo "... Camera_tests"
 	@echo "... common_lib"
 	@echo "... gmock"
 	@echo "... gmock_main"
@@ -308,7 +308,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/hfernandezs/Dev/IPC/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/hfernandezs/Dev/BodyMapper/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
